@@ -1,11 +1,4 @@
-var config = {
-    apiKey: "AIzaSyDKfbSL1CzA6Xsoz-r22Nz1iQ9LLjol0mI",
-    authDomain: "snt-website.firebaseapp.com",
-    databaseURL: "https://snt-website.firebaseio.com",
-    projectId: "snt-website",
-    storageBucket: "snt-website.appspot.com",
-    messagingSenderId: "906105933125"
-  };
+
 firebase.initializeApp(config);
 var db = firebase.firestore();
 function clubmaker(code){
