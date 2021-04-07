@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Events</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swipebox.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            'use strict';
+            jQuery('body').backstretch([
+                "images/mbg.jpg",
+                "images/DSC_006_mono.jpg",
+                "images/DSC_004_mono.jpg"
+            ], {
+                duration: 5000,
+                fade: 500,
+                centeredY: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./"><img src="images/ecelllogo.png" alt="Logo" style="width: 100px;"></a>
+                 
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            
+							<li><a href="./events.html">E-Summit</a></li>
+							<li><a href="./events.html">Startup Weekend</a></li>
+                            <li><a href="./events.html">HULT Prize</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Initiatives<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./initiatives.html">Internship Portal</a></li>
+                            <li><a href="./initiatives.html">Mentorship and Lecture Series</a></li>
+                            <li><a href="./initiatives.html">Startup 101</a></li>
+							<li><a href="./initiatives.html">Founders Speak</a></li>
+							<li><a href="./initiatives.html">Know your Department</a></li>
+                            <li><a href="./initiatives.html">Campus Director Programme</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Culture<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="culture.html">(TIIC)-IIT(BHU) Incubation Centre</a></li>
+                            <li><a href="culture.html">NCL-IIT(BHU) Incubation Centre</a></li>
+                            <li><a href="culture.html">R-ABI</a></li>
+							<li><a href="culture.html">Cisco thingQbator</a></li>
+                            <li><a href="culture.html">Business Club</a></li>
+                            <li><a href="culture.html">ShARE IIT BHU</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                   
+    
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="single-page-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title">Events</h2>
+                                    <hr>
+                                    <p>Get to know the E-Cell and the events it conducts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="content-wrapper">
+
+        <section id="about-us" class="white">
+            <!-- <div class="simple-ss" id="simple-ss"></div>  -->
+            <div class="container">
+              
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-12 fade-up">
+                        
+                        <p style="font-size: 150%;">The Entrepreneurship Cell, IIT(BHU) is institute run body run by the
+                            students of IIT(BHU) Varanasi devoted towards acting as a symbiotic link between
+                            entrepreneurs of E-Cell, IIT(BHU), Varanasi, and the existing startup ecosystem as well acting as a hub
+                            where all startups can meet, collaborate and innovate.
+                            <br><br>
+                            <b>What is the Cell about?</b><br><br>
+                            The Entrepreneurship Cell woks towards strengthening ties with the willing and talented
+                            entrepreneurs towards the development of startup hub in Varanasi providing numerous
+                            opportunities and top-quality education in the future. The Entrepreneurship Cell as a whole
+                            will be responsible for the apposite interaction between the entrepreneurs of
+                            E-Cell, IIT(BHU), Varanasi, and the startup ecosystem.</p>
+                        <p style="font-size: 150%;"> On its mission towards building an enterprising India,
+                            Entrepreneurship Cell IIT BHU provides great opportunities for startups, colleges, alumni
+                            and corporates to get involved with us. The Structure of our E-Cell represents our concern
+                            over different aspects of our vision.</p>
+
+                    </div>
+                    <div class="col-md-4 fade-up">
+
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="center gap fade-down section-heading">
+                    <h2 class="main-title">Know the Events</h2>
+                    <hr>
+                </div>
+                <div class="media-object">
+                    <div class="icon-right">
+                        <img src="images/DSC_009.jpg" class="custom-img1">
+                        <div class="gap"></div>
+                        <img src="images/DSC_004.jpg" class="custom-img1">
+                    </div>
+                    
+                    <div class="blurb-wrapper-left">
+                        <div class="center-event"><mark><b>E-Summit</b></mark></div>
+                        <p style="font-size: 150%;">
+
+                            <br>
+                             Entrepreneurship Summit   is an excellent opportunity for young and aspiring entrepreneurs to turn
+                             their startup dreams into reality. This extravagant event provides a perfect platform for the
+                             unsung heroes of our EC to interact with prospective investors by pitcher 2-3/5 ideas. E-Summit
+                             aspires to help the enthusiasts gain knowledge from people who have seen the in and out of the
+                             entrepreneurial sector over many years. So, what are you waiting for?
+                             Join us to think, ideate, express, achieve, and get ready to step into this Festival to sneak at
+                             how the future looks like.
+                             <br><a target="_blank" href="http://www.esummitiitbhu.com"><button class="btn btn-default">Visit
+                                     Our Site</button></a><br>
+                             <br> <br>
+     
+     
+                         </p>
+ 
+                    </div>
+                  </div>
+                  <div class="media-object">
+                    <div class="icon-left">
+                        <img src="images/gsw.jpg" class="custom-img1">
+                        <div class="gap"></div>
+                        <img src="images/gsw2.jpg" class="custom-img1">
+                    </div>
+                    
+                    <div class="blurb-wrapper-right">
+                        <div class="center-event">
+                            <mark> <b>Startup Weekend</b></mark>
+                           </div>
+                           <p style="font-size: 150%;">
+
+                            <br>
+
+                            Startup Weekend, Varanasi, powered by Google, is organized every year usually by an
+                            independent
+                            team in association with ‘The Science and Technology Council’ and ‘The Business Club’, for
+                            enthusiastic Entrepreneurs. Due to the event’s orientation towards entrepreneurship, it was
+                            included in the Constitution of E-Cell, and hence E-Cell also became a part of the
+                            organizing
+                            team at the time of its establishment. This event aims to learn together and network with
+                            each
+                            other, thus, helping with the ideation stage of the startups.
+                            <br><a target="_blank" href="https://www.techstars.com/communities/startup-weekend"><button
+                                    class="btn btn-default">Visit Our Site</button></a><br><br> <br>
+
+                        </p>
+
+                    </div>
+                  </div>
+                
+
+
+                <div class="gap"></div>
+                <div class="media-object">
+                    <div class="icon-right">
+                        <img src="images/hult1.jpg" class="custom-img1">
+                        <div class="gap"></div>
+                        <img src="images/hult2.png" class="custom-img1" >
+                    </div>
+                    
+                    <div class="blurb-wrapper-left">
+                        <div class="center-event">
+                            <mark><b>HULT Prize</b></mark>
+                            </div>
+                            <p style="font-size: 150%;">
+
+                          
+
+
+                                <br>
+                                 The HULT Prize is organized in association with ‘The Club of Sustainability and Innovation’
+                                 and
+                                 ‘The Business Club’. This event is oriented towards Social Entrepreneurship and is a big hit
+                                 with two eliminatory rounds - Abstract Submission and Prelims, following which one team -
+                                 Speedofy is selected for the Global Finals from the top 10 teams that pitch in the event.
+                                 Globally, it is run by the Bill Clinton Foundation and the HULT International Business
+                                 School,
+                                 Cambridge, Massachusetts.For more than a decade, the Hult Prize Foundation has been transforming how young people envision their own possibilities as impact leaders of change in the world around them.
+                                 <br><a target="_blank" href="http://www.hultprizeat.com/bhu-india"><button
+                                         class="btn btn-default">Visit Our Site</button></a><br>
+     
+     
+                             </p>
+     
+                    </div>
+                  </div>
+                
+
+
+                <div class="gap"></div>
+
+
+        </section>
+
+    </div>
+
+    <div id="footer-wrapper">
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Contact US</h3>
+                        Indian Institute of Technology (Banaras Hindu University)<br>
+                        Varanasi,India.<br>
+                        221005 <br> <br>
+                        2021 E-Cell IIT (BHU) Varanasi. All Rights Reserved. &nbsp&nbsp&nbsp
+                    </div>
+                    <div class="col-sm-6">
+                        <a style="margin: 5%;font-size: 26px " href="https://www.facebook.com/ecelliitvaranasi"
+                            target="_blank" class="fa fa-facebook wow fadeIn  myanimfb ja " data-wow-delay="0.3s"></a>
+
+                        <a style="margin: 5%;font-size: 26px" href="https://twitter.com/ecelliitbhu" target="_blank"
+                            class="fa fa-twitter wow fadeIn  myanimtw ja" data-wow-delay="0.6s"></a>
+
+                        <a style="margin: 5%;font-size: 26px" href="https://www.instagram.com/ecelliitbhu/"
+                            target="_blank" class="fa fa-instagram wow fadeIn  myanimig ja" data-wow-delay="0.9s"></a>
+
+                        <a style="margin: 5%;font-size: 26px"
+                            href="https://www.youtube.com/channel/UCUme5nNmSKY1GiUBUhlAnOQ" target="_blank"
+                            class="fa fa-youtube wow fadeIn  myanimyo ja" data-wow-delay="0.9s"></a>
+
+                        <a style="margin: 5%;font-size: 26px"
+                            href="https://www.linkedin.com/company/e-cell-iit-bhu-varanasi/" target="_blank"
+                            class="fa fa-linkedin wow fadeIn  myanimin ja" data-wow-delay="0.9s"></a>
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
