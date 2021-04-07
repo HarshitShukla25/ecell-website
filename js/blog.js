@@ -117,6 +117,11 @@ var	testim = document.getElementById("testim"),
 window.onload = function() {
 
     // Testim Script
+    var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} }
     function playSlide(slide) {
         for (var k = 0; k < testimDots.length; k++) {
             testimContent[k].classList.remove("active");
@@ -236,20 +241,5 @@ function links() {
   }
    
 }
-//yaha se preloader
-var available;
-var percentage_of_page;
-var half_screen;
-var height;
 
-$(window).scroll(function (e) {
-    available = $(document).height();
-    percentage_of_page = 0.5;
-    half_screen = available * percentage_of_page;
-    height = $(window).scrollTop();
-    if ( height > half_screen ) {
-        $(document.getElementById('notif')).show();
-    } else {
-        $(document.getElementById('notif')).hide();
-    }
-});
+
